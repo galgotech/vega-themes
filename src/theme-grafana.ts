@@ -31,9 +31,6 @@ const googlechartsTheme: Config = {
     left: 10,
   },
   style: {
-    'vega-actions': {
-        display: 'none',
-    },
     'guide-label': {
       font: defaultFont,
       fontSize: fontSize,
