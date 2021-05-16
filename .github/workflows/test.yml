@@ -1,0 +1,20 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    name: Test
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+
+      - name: Install Node dependencies
+        run: yarn --frozen-lockfile
+
+      - run: yarn lint
+      - run: yarn build
